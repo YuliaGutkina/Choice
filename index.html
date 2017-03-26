@@ -13,17 +13,17 @@
     <div class="row">
       <div class="col-xs-4">
         <a href="#" class="page-header__logo">
-          <img src="" alt="Choice logo" width="300" height="73">
+          <img src="img/logo.png" alt="Choice logo" width="300" height="74">
         </a>
       </div>
       <div class="page-header__contacts col-xs-8">
         <a href="tel:+78003333333" class="page-header__phone">8 800 333 33 33</a>
         <div class="page-header__social social">
-          <a href="#" class="social__link social__link--" title="vkontakte">vkontakte</a>
-          <a href="#" class="social__link social__link--" title="facebook">facebook</a>
-          <a href="#" class="social__link social__link--" title="instagram">instagram</a>
-          <a href="#" class="social__link social__link--" title="youtube">youtube</a>
-          <a href="#" class="social__link social__link--" title="twitter">twitter</a>
+          <a href="#" class="social__link social-link social-link--vk" title="vkontakte">vkontakte</a>
+          <a href="#" class="social__link social-link social-link--fb" title="facebook">facebook</a>
+          <a href="#" class="social__link social-link social-link--insta" title="instagram">instagram</a>
+          <a href="#" class="social__link social-link social-link--youtube" title="youtube">youtube</a>
+          <a href="#" class="social__link social-link social-link--twitter" title="twitter">twitter</a>
         </div>
         <div class="page-header__nav main-nav">
           <ul class="main-nav__list">
@@ -48,7 +48,23 @@
     </div>
   </header>
   <section class="banner">
-
+    <div class="banner__slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 banner__item">
+            <blockquote>
+              Звук<br>
+              человеческого голоса —<br>
+              это музыка<br>
+              для человеческого слуха.
+            </blockquote>
+            <cite>
+              Дидим Александрийский
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <main>
     <section class="products">
@@ -75,7 +91,7 @@
           </article>
           <article class="products__item col-xs-3">
             <div class="products__item-main">
-              <a href="#" class="products__item-name">Презентации</a>
+              <a href="#" class="products__item-name"><br>Презентации</a>
               <div class="products__audio"></div>
             </div>
             <div class="products__item-footer">
@@ -84,7 +100,7 @@
           </article>
           <article class="products__item col-xs-3">
             <div class="products__item-main">
-              <a href="#" class="products__item-name">Ролики <br>для торговых центров</a>
+              <a href="#" class="products__item-name">Ролики <br>для торговых <br>центров</a>
               <div class="products__audio"></div>
             </div>
             <div class="products__item-footer">
@@ -102,7 +118,7 @@
           </article>
           <article class="products__item col-xs-3">
             <div class="products__item-main">
-              <a href="#" class="products__item-name">Вокальные ролики</a>
+              <a href="#" class="products__item-name"><br>Вокальные ролики</a>
               <div class="products__audio"></div>
             </div>
             <div class="products__item-footer">
@@ -145,7 +161,7 @@
               <span class="products__item-price">от 7000 р.</span>
             </div>
           </article>
-          <article class="products__item col-xs-3 col-xs-offset-1-5">
+          <article class="products__item col-xs-3">
             <div class="products__item-main">
               <a href="#" class="products__item-name">Написание сценариев</a>
             </div>
@@ -153,7 +169,7 @@
               <span class="products__item-price">от 7000 р.</span>
             </div>
           </article>
-          <article class="products__item col-xs-3 col-xs-offset-1-5">
+          <article class="products__item col-xs-3">
             <div class="products__item-main">
               <a href="#" class="products__item-name">Озвучка стихов</a>
             </div>
@@ -169,36 +185,41 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="section-title">Отзывы:</h2>
+        <h2 class="section-title reviews__title">Отзывы:</h2>
         <div class="reviews__slider">
-          <div class="">
-            <div class="row">
-              <article class="col-xs-6 reviews__item">
-                <header class="reviews__author">
-
-                </header>
-                «Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»
-              </article>
-            </div>
+          <div class="row">
+            <article class="col-xs-6 reviews__item">
+              <header class="reviews__author">
+                <div class="reviews__author-photo">
+                  <img src="" alt="" width="155" height="155">
+                </div>
+                <div class="reviews__author-info">
+                  Александра Иванова
+                  менеджер по рекламе
+                  «Итака»
+                </div>
+              </header>
+              <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
     <section class="clients">
       <div class="container">
-        <h2 class="section-title">Наши клиенты:</h2>
+        <h2 class="section-title clients__title">Наши клиенты:</h2>
         <div class="row clients__list">
           <a href="#" class="col-xs-3 clients__item" title="FedEx">
-            <img src="" alt="FedEx">
+            <img src="img/client1.png" alt="FedEx">
           </a>
           <a href="#" class="col-xs-3 clients__item" title="telenor">
-            <img src="" alt="telenor">
+            <img src="img/client2.png" alt="telenor">
           </a>
           <a href="#" class="col-xs-3 clients__item" title="">
-            <img src="" alt="smth">
+            <img src="img/client3.png" alt="smth">
           </a>
           <a href="#" class="col-xs-3 clients__item" title="SwiftKey">
-            <img src="" alt="SwiftKey">
+            <img src="img/client4.png" alt="SwiftKey">
           </a>
         </div>
       </div>
@@ -208,13 +229,13 @@
         <h2 class="section-title">Мы в соц. сетях:</h2>
         <div class="row">
           <div class="col-xs-4">
-            insta
+
           </div>
           <div class="col-xs-4">
-            vk
+
           </div>
           <div class="col-xs-4">
-            fb
+
           </div>
         </div>
       </div>

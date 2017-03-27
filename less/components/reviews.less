@@ -1,20 +1,26 @@
 // main: ../style.less
 
 .reviews {
+  padding-bottom: 100px;
 
+  &--bordered {
+    border-top: 1px solid @color-main;
+    border-bottom: 1px solid @color-main;
+  }
 }
 
-.reviews__title {
-  margin-bottom: 70px;
+.reviews__item {
+  padding-right: 50px;
 }
 
 .reviews__author {
-  height: 180px;
+  min-height: 180px;
 }
 
 .reviews__author-photo {
   width: 155px;
   height: 155px;
+  margin-bottom: 25px;
   border-radius: 50%;
   border: 2px solid @color-main;
   background-color: @color-main-light;
@@ -25,4 +31,23 @@
 
 .reviews__author-info {
   padding-top: 40px;
+  font-size: 20px;
+}
+
+.reviews__author-name,
+.reviews__author-job {
+  display: block;
+  font-weight: 600;
+}
+
+.reviews__author-position {
+  display: block;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.reviews__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
 }

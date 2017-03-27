@@ -5,13 +5,15 @@
 
   &--more {
     background-color: @bg-color-secondary;
+    background: url(../img/bg.jpg) repeat-x 0 0;
+    background-size: contain;
     //padding-bottom: 50px;
     border-bottom: 3px solid @color-main;
 
     .products__item {
 
       &:not(:nth-child(3n+1)) {
-        margin-left: 12.499999995%;
+
       }
     }
 
@@ -28,49 +30,153 @@
       border-bottom: none;
     }
   }
+
+
+  &--examples {
+
+    .products__item {
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .products__item-main {
+      min-height: 315px; //tmp
+      height: auto;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    .products__item-main {
+      padding-top: 30px;
+    }
+  }
 }
 
 .products__item {
   position: relative;
   text-align: center;
-  //padding: 0;
+  padding: 0;
   margin-top: 40px;
   margin-bottom: 60px;
 
   &:not(:nth-child(4n+1)) {
-    //
-    // .products__item-main {
-    //   border-left: 1px solid @color-main;
-    // }
+
+    .products__item-main {
+      border-left: 1px solid @color-main;
+    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 109px;
-    height: 109px;
-    border-radius: 50%;
-    background: url(../img/round.jpg) no-repeat 0 0;
-  }
-
+  &::before,
   &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
     width: 109px;
     height: 109px;
-    background: url(../img/odejda.png) no-repeat 50% 50%;
+  }
+
+  &::before {
+    transform: translateX(-50%);
+    background: url(../img/round.jpg) no-repeat 0 0;
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: 55px;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/spritesheet2.png);    background-repeat: no-repeat;
+  }
+
+  &--ivr {
+
+    &::after {
+      top: 50px;
+      .stitches-sprite2(-5px, -5px, 59px, 59px);
+    }
+  }
+
+  &--koncert {
+
+    &::after {
+      .stitches-sprite2(-74px, -5px, 52px, 57px);
+    }
+  }
+
+  &--m {
+
+    &::after {
+      .stitches-sprite2(-136px, -5px, 59px, 49px);
+    }
+  }
+
+  &--prezent {
+
+    &::after {
+      .stitches-sprite2(-205px, -5px, 60px, 53px);
+    }
+
+  }
+
+  &--radio {
+
+    &::after {
+      top: 50px;
+      .stitches-sprite2(-275px, -5px, 59px, 59px);
+    }
+  }
+
+  &--scenar {
+
+    &::after {
+      .stitches-sprite2(-344px, -5px, 59px, 45px);
+    }
+  }
+
+  &--stihi {
+
+    &::after {
+      top: 50px;
+      .stitches-sprite2(-413px, -5px, 59px, 59px);
+    }
+  }
+
+  &--tc {
+
+    &::after {
+      .stitches-sprite2(-482px, -5px, 61px, 59px);
+    }
+  }
+
+  &--video {
+
+    &::after {
+      .stitches-sprite2(-553px, -5px, 58px, 56px);
+    }
+  }
+
+  &--vokal {
+
+    &::after {
+      .stitches-sprite2(-621px, -5px, 48px, 55px);
+    }
+  }
+
+  &--odejda {
+
+    &::after {
+      .stitches-sprite2(-679px, -5px, 54px, 56px);
+    }
   }
 }
 
 .products__item-main {
   min-height: 240px;
-
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 110px;
 }
 
@@ -91,6 +197,8 @@
   padding-top: 35px;
   border-bottom: 2px solid @color-main;
   font-size: 0;
+  width: 240px;
+  margin: 0 auto;
 }
 
 .products__item-price {
@@ -103,6 +211,18 @@
   border-radius: 20px 20px 0 0;
 }
 
-.products__btn-wrapper {
-  text-align: center;
+.product__example-item {
+  text-align: left;
+}
+
+.product__example-name {
+  display: inline-block;
+  height: 90px;
+  line-height: 90px;
+  vertical-align: bottom;
+}
+
+.products__example-radio {
+  height: 65px;
+  padding-top: 15px;
 }

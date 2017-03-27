@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.page-title {
+  padding-bottom: 50px;
+}
+
+.page-title__slider {
+  height: 238px;
+  background: @color-secondary url(../img/bg-title.jpg) no-repeat 50% 0;
+  color: white;
+}
+
+.page-title__item {
+  height: 238px;
+  padding-top: 80px;
+  position: relative;
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &::before {
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    background: url(../img/round.jpg) no-repeat 50% 50%;
+    border: 2px solid @bg-color;
+  }
+
+  &::after {
+    bottom: 5px;
+    background-image: url(../img/spritesheet2.png);    background-repeat: no-repeat;
+    .stitches-sprite2(-275px, -5px, 59px, 59px);
+  }
+}

@@ -1,0 +1,88 @@
+// main: ../style.less
+
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-fb {
+      .stitches-sprite(-5px, -5px, 25px, 25px);
+    }
+
+    &.sprite-insta {
+      .stitches-sprite(-40px, -5px, 25px, 25px);
+    }
+
+    &.sprite-twitter {
+      .stitches-sprite(-75px, -5px, 25px, 25px);
+    }
+
+    &.sprite-vk {
+      .stitches-sprite(-110px, -5px, 25px, 25px);
+    }
+
+    &.sprite-youtube {
+      .stitches-sprite(-145px, -5px, 25px, 25px);
+    }
+}
+
+
+.stitches-sprite2(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite2 {
+    background-image: url(../img/spritesheet2.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite2-IVR {
+        .stitches-sprite2(-5px, -5px, 59px, 59px);
+    }
+
+    &.sprite2-Koncert {
+        .stitches-sprite2(-74px, -5px, 52px, 57px);
+    }
+
+    &.sprite2-M {
+        .stitches-sprite2(-136px, -5px, 59px, 49px);
+    }
+
+    &.sprite2-Prezent {
+        .stitches-sprite2(-205px, -5px, 60px, 53px);
+    }
+
+    &.sprite2-Radio {
+        .stitches-sprite2(-275px, -5px, 59px, 59px);
+    }
+
+    &.sprite2-Scenar {
+        .stitches-sprite2(-344px, -5px, 59px, 45px);
+    }
+
+    &.sprite2-Stihi {
+        .stitches-sprite2(-413px, -5px, 59px, 59px);
+    }
+
+    &.sprite2-TC {
+        .stitches-sprite2(-482px, -5px, 61px, 59px);
+    }
+
+    &.sprite2-Video {
+        .stitches-sprite2(-553px, -5px, 58px, 56px);
+    }
+
+    &.sprite2-Vokal {
+        .stitches-sprite2(-621px, -5px, 48px, 55px);
+    }
+
+    &.sprite2-odejda {
+        .stitches-sprite2(-679px, -5px, 54px, 56px);
+    }
+}

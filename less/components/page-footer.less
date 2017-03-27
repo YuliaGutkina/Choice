@@ -1,8 +1,13 @@
+// main: ../style.less
+
 .page-footer {
   padding-top: 45px;
-  padding-bottom: 35px;
   background-color: @color-main;
+  background-image: linear-gradient(to right, @color-secondary 50%, @color-primary 50%);
   color: white;
+  background-size: 100% 15px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
   //font-size: 18px;
 
   a {
@@ -15,6 +20,19 @@
   margin-bottom: 20px;
 }
 
+.page-footer__copyright {
+  padding-bottom: 35px;
+  border-bottom: 15px solid @color-secondary;
+  max-width: auto;
+  float: left;
+}
+
 .page-footer__design {
+  padding-bottom: 35px;
   text-align: right;
+  border-bottom: 15px solid @color-primary;
+
+  a {
+    color: inherit;
+  }
 }

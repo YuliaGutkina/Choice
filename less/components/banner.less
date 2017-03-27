@@ -7,10 +7,51 @@
 
 .banner__slider {
   height: 370px;
-  background: @bg-color-secondary url(../img/banner.jpg) no-repeat 50% 0;
+  background: @color-secondary url(../img/banner.jpg) no-repeat 50% 0;
   color: white;
 }
 
 .banner__item {
   padding: 40px 70px;
+}
+
+.banner__text {
+  display: inline-block;
+}
+
+.banner__blockquote {
+  border-left: none;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  &::before {
+    content: "\00ab";
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "\00bb";
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.banner__blockquote-large {
+  font-size: 2em;
+}
+
+.banner__cite {
+  display: block;
+  text-align: right;
 }

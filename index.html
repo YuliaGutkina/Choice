@@ -76,7 +76,21 @@
           <article class="products__item products__item--radio col-xs-3">
             <div class="products__item-main">
               <a href="#" class="products__item-name">Ролики <br>для радио</a>
-              <div class="products__audio"></div>
+              <div class="products__audio">
+                <div class="audioplayer">
+                  <div class="audioplayer__controls">
+                    <button class="audioplayer__play"></button>
+                    <div class="audioplayer__volume-bar" tabindex="0">
+                      <div class="audioplayer__volume-bar-value"></div>
+                    </div>
+                  </div>
+                  <audio class="audioplayer__track">
+                    <source type="audio/ogg" src="http://terrillthompson.com/music/audio/smallf.ogg"/>
+                    <source type="audio/mpeg" src="http://terrillthompson.com/music/audio/smallf.mp3"/>
+                     Sorry, your browser does not support HTML5 audio.
+                  </audio>
+                </div>
+              </div>
             </div>
             <div class="products__item-footer">
               <span class="products__item-price">от 7000 р.</span>

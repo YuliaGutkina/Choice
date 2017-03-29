@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.audioplayer {
+  width: 200px;
+  height: 15px;
+}
+
+.audioplayer__track {
+
+}
+
+.audioplayer__controls {
+  text-align: left;
+  font-size: 0;
+}
+
+.audioplayer__play {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-left: 8px solid @color-main;
+    border-right: none;
+  }
+
+  &--paused {
+
+    &::before {
+
+    }
+  }
+}
+
+.audioplayer__volume-bar {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 180px;
+  height: 12px;
+  border: 1px solid @color-main;
+  border-radius: 8px;
+  position: relative;
+}

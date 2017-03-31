@@ -4,6 +4,11 @@
   padding-top: 45px;
   padding-bottom: 65px;
 
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
   &--more {
     background-color: @bg-color-secondary;
     background: url(../img/bg.jpg) repeat-x 0 0;
@@ -40,8 +45,11 @@
 
 
   &--examples {
+    padding-top: 55px;
+    padding-bottom: 70px;
 
     .products__item {
+      margin-bottom: 0;
 
       &::before,
       &::after {
@@ -51,6 +59,7 @@
 
     .products__item-main {
       height: auto;
+      min-height: 315px;
       padding-left: 65px;
       padding-right: 65px;
     }
@@ -58,10 +67,10 @@
     .products__item-main {
       padding-top: 30px;
     }
-  }
 
-  .section-title {
-    margin-bottom: 30px;
+    .section-title {
+      margin-bottom: 40px;
+    }
   }
 }
 

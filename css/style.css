@@ -382,6 +382,9 @@ a {
   padding-top: 45px;
   padding-bottom: 65px;
 }
+.products .section-title {
+  margin-bottom: 30px;
+}
 .products--more {
   background-color: #dce6ef;
   background: url(../img/bg.jpg) repeat-x 0 0;
@@ -407,20 +410,28 @@ a {
   border: 2px solid #f1592a;
   border-bottom: none;
 }
+.products--examples {
+  padding-top: 55px;
+  padding-bottom: 70px;
+}
+.products--examples .products__item {
+  margin-bottom: 0;
+}
 .products--examples .products__item::before,
 .products--examples .products__item::after {
   display: none;
 }
 .products--examples .products__item-main {
   height: auto;
+  min-height: 315px;
   padding-left: 65px;
   padding-right: 65px;
 }
 .products--examples .products__item-main {
   padding-top: 30px;
 }
-.products .section-title {
-  margin-bottom: 30px;
+.products--examples .section-title {
+  margin-bottom: 40px;
 }
 .products__item {
   position: relative;
@@ -583,6 +594,7 @@ a {
   padding-bottom: 95px;
 }
 .reviews--bordered {
+  padding-top: 45px;
   border-top: 1px solid #404041;
   border-bottom: 1px solid #404041;
 }
@@ -627,6 +639,17 @@ a {
   font-size: 17px;
   line-height: 1.2;
 }
+.price {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+.price .section-title {
+  margin-bottom: 10px;
+}
+.price__table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
 .price__table th,
 .price__table td {
   text-align: center;
@@ -640,15 +663,23 @@ a {
 }
 .price__table td {
   border: none !important;
-  font-size: 22px;
+  font-size: 20px;
 }
 .price__table tr:nth-child(2n) {
   background-color: #dce6ef;
+}
+.price__table tr:nth-child(2n+1) td {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.description .section-title {
+  margin-bottom: 45px;
 }
 .description__text {
   text-align: justify;
   width: 70%;
   margin: 0 auto;
+  line-height: 1.6;
 }
 .description__text p {
   margin-bottom: 0;

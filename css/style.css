@@ -187,7 +187,7 @@ a {
 }
 .page-header {
   border-bottom: none;
-  padding-top: 50px;
+  padding-top: 53px;
   padding-bottom: 60px;
   margin-top: 0;
   margin-bottom: 0;
@@ -204,7 +204,7 @@ a {
   vertical-align: top;
   font-size: 33px;
   line-height: 28px;
-  margin-right: 7px;
+  margin-right: 20px;
   font-weight: 600;
 }
 .page-header__social {
@@ -212,7 +212,7 @@ a {
   vertical-align: top;
 }
 .page-header__nav {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .page-footer {
   padding-top: 45px;
@@ -228,7 +228,7 @@ a {
 }
 .page-footer__phone {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .page-footer__copyright {
   padding-bottom: 35px;
@@ -288,7 +288,7 @@ a {
   color: white;
 }
 .banner__item {
-  padding: 40px 70px;
+  padding: 38px 80px;
 }
 .banner__text {
   display: inline-block;
@@ -378,11 +378,23 @@ a {
   margin-top: 0;
   text-decoration: underline;
 }
+.products {
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
 .products--more {
   background-color: #dce6ef;
   background: url(../img/bg.jpg) repeat-x 0 0;
   background-size: contain;
+  padding-bottom: 50px;
   border-bottom: 3px solid #404041;
+}
+.products--more .products__item {
+  margin-bottom: 55px;
+}
+.products--more .products__item-name {
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 .products--more .products__item-main,
 .products--more .products__item-name {
@@ -407,12 +419,15 @@ a {
 .products--examples .products__item-main {
   padding-top: 30px;
 }
+.products .section-title {
+  margin-bottom: 30px;
+}
 .products__item {
   position: relative;
   text-align: center;
   padding: 0;
-  margin-top: 40px;
   margin-bottom: 60px;
+  margin-top: 35px;
 }
 .products__item:not(:nth-child(4n+1)) .products__item-main {
   border-left: 1px solid #404041;
@@ -548,6 +563,7 @@ a {
   margin-bottom: 15px;
 }
 .clients {
+  padding-top: 45px;
   padding-bottom: 90px;
   background-color: #dce6ef;
 }
@@ -555,22 +571,29 @@ a {
   margin-top: 50px;
   margin-bottom: 130px;
 }
+.clients .section-title {
+  margin-bottom: 75px;
+}
 .clients__item {
   text-align: center;
   line-height: 90px;
 }
 .reviews {
-  padding-bottom: 100px;
+  padding-top: 87px;
+  padding-bottom: 95px;
 }
 .reviews--bordered {
   border-top: 1px solid #404041;
   border-bottom: 1px solid #404041;
 }
+.reviews .section-title {
+  margin-bottom: 80px;
+}
 .reviews__item {
   padding-right: 50px;
 }
 .reviews__author {
-  min-height: 180px;
+  min-height: 175px;
 }
 .reviews__author-photo {
   width: 155px;
@@ -580,7 +603,7 @@ a {
   border: 2px solid #404041;
   background-color: #acacac;
   overflow: hidden;
-  margin-right: 25px;
+  margin-right: 20px;
   float: left;
 }
 .reviews__author-info {
@@ -602,6 +625,7 @@ a {
   padding-bottom: 20px;
   font-style: italic;
   font-size: 17px;
+  line-height: 1.2;
 }
 .price__table th,
 .price__table td {
